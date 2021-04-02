@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="img/png" href="logo.ico">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SERVITEC</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo.jpg" class="imgLogo" />
+
+      <h1 class="formulario__titulo">SERVITEC</h1>
+      <h3 class="formulario__subtitulo">FORMULARIO SOBRE EL DISPOSITIVO</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para para detallar información sobre tu dispositivo.
+      </p>
+
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+
+
+      <p class="formulario__parrafo">Les informamos a los clientes que hacen envíos desde otras provincias que nos manejamos con correos y encomiendas a su elección o la mejor opción</p>
+
+
+      <label for="empleado" class="formulario__label"
+      >Seleccione su provincia</label
+    >
+    <select id="empleado" name="listaempleados" class="formulario__input">
+      <option>Buenos Aires</option>
+      <option>Capital Federal</option>
+      <option>Catamarca</option>
+      <option>Chaco</option>
+      <option>Chubut</option>
+      <option>Córdoba</option>
+      <option>Corrientes</option>
+      <option>Entre Ríos</option>
+      <option>Formosa</option>
+      <option>Jujuy</option>
+      <option>La Pampa</option>
+      <option>La Rioja</option>
+      <option>Mendoza</option>
+      <option>Misiones</option>
+      <option>Neuquén</option>
+      <option>Río Negro</option>
+      <option>Salta</option>
+      <option>San Juan</option>
+      <option>San Luis</option>
+      <option>Santa Cruz</option>
+      <option>Santa Fe</option>
+      <option>Santiago Del Estero</option>
+      <option>Tierra Del Fuego</option>
+      <option>Tucumán</option>
+
+    </select>
+
+      <label for="dispositivo" class="formulario__label"
+      >¿Cuál es tu dispositivo?</label
+    >
+    <select id="dispositivo" name="listadedispositivo" class="formulario__input">
+      <option>MAC</option>
+      <option>MACBOOK</option>
+      <option>MACBOOK PRO</option>
+      <option>MACBOOK AIR</option>
+      <option>IPHONE</option>
+      <option>IPAD</option>
+      <option>IPOD</option>
+      <option>APPLETV</option>
+    </select>
+
+    <label for="modelo" class="formulario__label">Escribe el modelo de tu dispositivo</label>
+    <input
+      id="modelo"
+      type="text"
+      class="formulario__input"
+      placeholder="Modelo del dispositivo"
+    />
+
+    <p class="formulario__parrafo">
+      Con todos nuestros bypass va a poder usar tu Iphone/Ipad/Ipod de forma óptima, prenderlo, apagarlo, usar aplicaciones, tener tu cuenta de Icloud.</p>
+
+      <p class="formulario__parrafo">SOLO IPHONE: Se informa que dependiendo si el IMEI/NÚMERO DE SERIE esta reportado o si el dispositivo es GSM o MEI es el tipo de bypass que va a ser recomendado.</p>
+
+    
+
+
+    <label for="servicio" class="formulario__label"
+    >SERVICIO A REALIZAR (Si es iphone/Ipad)</label
+  >
+  <select id="servicio" name="listaservicios" class="formulario__input">
+    <option>BYPASS GSM - $4900</option>
+    <option>BYPASS GSM REPORTADO - $4500</option>
+    <option>BYPASS MEI PREMIUM - $4000</option>
+    <option>BYPASS MEI REPORTADO - $9500</option>
+    <option>BYPASS MEI SIN REPORTAR - $10500</option>
+    <option>Deseo saber cual es el más conveniente en mi caso</option>
+    <option>Ninguno</option>
+  </select>
+
+  <p class="formulario__parrafo">Por si no sabe si su dispositivo Iphone esta reportado le pedimos que nos deje el imei/nÚmero de serie para constatar el estado del dispositivo, y poder brindarle un mejor servicio.</p>
+    
+      <label for="imei" class="formulario__label">¿Cuál es el nÚmero de serie/IMEI? (En caso de que sea Iphone)</label>
+      <input
+        id="imei"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica el numero de serie del dispositivo"
+      />
+
+
+
+      <label for="fecha" class="formulario__label"
+        >Indica la fecha de tu reserva</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="hora" class="formulario__label"
+        >Indica la hora de tu reserva</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+
+    
+      <label for="adicional" class="formulario__label">Si quieres agregar mas información de tu dispositivo escribela aquí</label>
+      <input
+        id="adicional"
+        type="text"
+        class="formulario__input"
+        placeholder="Información adicional"
+      />
+     
+
+      <p class="formulario__parrafo">¡IMPORTANTE!</p>
+      <p class="formulario__parrafo">Iphone/Ipad/Ipod tiene que tener todos los botones funcionando.</p>
+      <p class="formulario__parrafo">Correo/Ecomienda va a cargo a cargo del cliente.</p>
+
+
+
+
+      <p>Tambien compramos dispositivos bloqueados preguntar por WhatsApp</p>
+
+      <label for="compra" class="formulario__label">Vendé tu dispositivo</label>
+      <input
+        id="compra"
+        type="text"
+        class="formulario__input"
+        placeholder="Dispositivo a la venta."
+      />
+
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
